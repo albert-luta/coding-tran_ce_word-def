@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "Word Def",
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content.js"]
+		}
+	],
+	"browser_action": {
+		"default_icon": "assets/icon.png",
+		"default_popup": "popup/index.html",
+		"default_title": "Word def tool"
+	}
+}
